@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  reactive_db:
+    container_name: reactive_db
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=user1
+      - POSTGRES_USER=user1
+      - POSTGRES_DB=reactive
+    ports:
+      - 5436:5432
+    volumes:
+      - .data:/var/lib/postgresql/data

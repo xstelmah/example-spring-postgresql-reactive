@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    username: user1
+    password: user1
+    url: r2dbc:h2:mem:////tmp/db/testdb;DB_CLOSE_DELAY=-1;
+    pool:
+      enabled: false
+  flyway:
+    user: user1
+    password: user1
+    url: jdbc:h2:mem:/tmp/db/testdb;DB_CLOSE_DELAY=-1;
+    enabled: true
